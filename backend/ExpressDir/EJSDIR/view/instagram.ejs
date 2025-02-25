@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= username %>'s Instagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fafafa;
+            color: #333;
+        }
+        .profile {
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            width: 300px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        .profile h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .profile p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <img src="https://via.placeholder.com/100" alt="<%= username %>'s Avatar">
+        <h1>@<%= username %></h1>
+        <p>Welcome to <%= username %>'s Instagram profile!</p>
+    </div>
+</body>
+</html>

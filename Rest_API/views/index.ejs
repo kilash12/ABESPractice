@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Quora post</h1>
+    <% for(let post of posts) { %>
+        <div class="post">
+            <h3 class="user">@<%= post.username %></h3>
+            <h4 class="content"><%= post.content %></h4>
+            <br><br>
+            <a href="http://localhost:3000/posts/<%=post.id%>">see in detail</a>
+            <a href="http://localhost:3000/posts/edit"><% <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css"> %></a>
+             
+
+
+
+        </div>
+    <% } %>
+    <a href="http://localhost:3000/posts/new">create a new post(p)=>id ===p.id</a>
+</body>
+</html>
+ -->
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quora Post</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css">
+</head>
+<body>
+    <h1>Quora Posts</h1>
+    <% for(let post of posts) { %>
+        <div class="post">
+            <h3 class="user">@<%= post.username %></h3>
+            <h4 class="content"><%= post.content %></h4>
+            <br><br>
+            <a href="http://localhost:3000/posts/<%= post.id %>">See in Detail</a>
+            <a href="http://localhost:3000/posts/<%= post.id %>/edit">Edit Post</a>
+        </div>
+    <% } %>
+    <a href="http://localhost:3000/posts/new">Create a New Post</a>
+</body>
+</html>
